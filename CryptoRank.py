@@ -159,7 +159,7 @@ while True:
 
     # Countdown before starting the next cycle
     countdown_msg = f"Wait "
-    for remaining_seconds in range(5, 0, -1):
+    for remaining_seconds in range(10800, 0, -1):
         remaining_time = str(timedelta(seconds=remaining_seconds))
         print(f"\r{Fore.MAGENTA + Style.BRIGHT}{countdown_msg}{remaining_time}", end='')
         time.sleep(1)
